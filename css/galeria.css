@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -15,16 +16,18 @@ header{
     align-items:center;
 }
 
-header h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-    color: 	#4F4F4F;
-}
 .meio{
-    padding-top: 35px;
-    padding-bottom:35px;
+    padding-top: 50px;
+    padding-bottom:120px;
 }
+.tituloLançamentos{
+    font-family: 'Anek Latin', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom:80px;
+    padding-left: 680px;
+}
+
 .galeria-container{
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +45,23 @@ header h1{
     flex-grow: 1;
     transition: transform .5s linear;
 }
+.galeria-items1{
+    width: 600px;
+    height: 350px;
+    border: 7px solid white;
+    box-shadow: 10px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+
 
 .galeria-items img{
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria-items1 img{
     overflow:hidden;
     width: 100%;
     height: 100%;
@@ -53,14 +71,18 @@ header h1{
 .galeria-items:hover{
     transform: scale(1.1);
 }
+.galeria-items1:hover{
+    transform: scale(1.1);
+}
 
 footer{
-    height: 150px;
-    display: flex;
-    justify-content: center;
     align-items:center;
+    height:150px;
+    display:flex;
     color: #000;
+    background-color: rgba(170, 166, 166, 0.258) ;
 }
+
 
 @media only screen and (max-width:768px){
     header{
@@ -71,9 +93,6 @@ footer{
         align-items:center; 
     }
 
-    /* header h1{
-        font-size: 35px;
-    } */
 
     .galeria-container{
         display: flex;

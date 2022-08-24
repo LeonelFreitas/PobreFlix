@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/stylo.css">
+    <link rel="stylesheet" href="./css/stylo.css">
+    <link rel="stylesheet" href="./css/galeria.css">
     <title>PobreFlix</title>
 
 </head>
 
 <body>
    <div class="menu_bar">
-       <h1 class="logo">Pobre<span>Flix</span></h1>
+    <h1 class="logo"><a class="linkIndexPobre" href="index.html">Pobre</a><span><a class="linkIndexFlix" href="index.html">Flix</a></a></span></h1>
             <ul>
                 <li><a href="lançamentos.html">Lançamentos 2022 🏴‍☠️</a></li>
                 <li>
@@ -44,10 +45,54 @@
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="text" id="newsQuery" placeholder="O que deseja assistir?">
-                <button class="btn btn-outline-warning" type="button" id="searchBtn">Buscar</button>
+                <button class="btn btn-outline-warning" type="button"onclick="alerta()" value="Alert">Buscar</button>
             </form>
    </div> 
 
+   <div class="meio">
+       
+       <div class="tituloLançamentos">
+            <h1>LANÇAMENTOS 2022</h1>
+        </div>
+
+            <div class="galeria-container">
+
+                    <a href="https://www.netflix.com/" class="galeria-items1">
+                        <img src="./imagens/lançamentos/1.png" alt="">
+                    </a>
+                
+                    <a href="https://www.netflix.com/" class="galeria-items1">
+                        <img src="./imagens/Lançamentos/2.png" alt="">
+                    </a>
+                
+                    <a href="https://www.netflix.com/" class="galeria-items1">
+                        <img src="./imagens/lançamentos/3.png" alt="projeto adam capa">
+                    </a>
+                
+                    <a href="https://www.netflix.com/" class="galeria-items1">
+                        <img src="./imagens/lançamentos/4.png" alt="">
+                    </a>
+
+                    <a href="https://www.netflix.com/" class="galeria-items1">
+                        <img src="./imagens/lançamentos/5.png" alt="projeto adam capa">
+                    </a>
+                
+                    <a href="https://www.netflix.com/" class="galeria-items1">
+                        <img src="./imagens/lançamentos/6.png" alt="">
+                    </a>
+                
+            </div>
+    </div>
+
 </body>
+<script>
+    function alerta()
+    {
+    alert("Desculpe, ainda não disponibilizamos esse filme ou série!");
+    }
+    </script>
+<footer>
+    <p class="text-footer">Copyright © PobreFlix - Todos os direitos reservados | Desenvolvido por <a class="criadorSite" href="https://www.linkedin.com/in/leonel-freitas-4787aa223/"> Leonel Freitas </a></p>
+</footer>
 
 </html>
